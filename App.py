@@ -52,5 +52,5 @@ def root(response: Response,item: Item):
     return JSONResponse(content={"Auto Completed Text":seed_text.upper()})
 
 if __name__ == "__main__":
-    uvicorn.run("App:app", host="0.0.0.0", port=19027, log_level="info", workers = 1,debug=True)
+    uvicorn.run("App:app", host="0.0.0.0", port=19018, log_level="info", workers = 1,debug=True)
     
